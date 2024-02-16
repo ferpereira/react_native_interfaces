@@ -1,12 +1,21 @@
 import React from "react";
 
-import { View, Text } from "react-native";
-import { Container } from "./styles";
+import { Container, Header, Title, Content } from "./styles";
+import { Input } from "../../components/Inputs";
+import { Card } from "../../components/Card";
+
+import coverImg from "../../assets/cover.png";
 
 export function Home() {
   return (
     <Container>
-      <Text>Home</Text>
+      <Header source={coverImg}>
+        {/*<Title>Fernando</Title> */}
+        <Input placeholder="Pesquisar..."></Input>
+      </Header>
+      <Content>
+        <Card></Card>
+      </Content>
     </Container>
     //<View style={{justifyContent: "center", alignContent: "center", flex: 1}}></View>
   );
